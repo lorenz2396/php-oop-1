@@ -4,15 +4,20 @@ class Movie
 {
 
     public $title;
+    public $genre;
+    public $year;
 
-    function __construct($_title)
+
+    function __construct($title, $genre, $year)
     {
-
-        $this->title = $_title;
+        $this->title = $title;
+        $this->genre = $genre;
+        $this->year = $year;
     }
 
     public function printMovie()
     {
-        return $this->title;
+        $genreString = implode(", ", $this->genre);
+        return "{$this->title} - {$genreString} - {$this->year}";
     }
 }
