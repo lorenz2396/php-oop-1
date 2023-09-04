@@ -1,10 +1,21 @@
 <?php
 
-require_once __DIR__ - "/Models/movie.php";
+require_once __DIR__ - "./Classes/movie.php";
 
 $movies = [
-    $godfather = new Movie("The Godfather", "Mafia", "1972"),
-    $scarface = new Movie("Scarface", "Crime", "1983")
+    $godfather = new Movie(
+        "The Godfather",
+        [
+            "Action","Crime",
+        ],
+        "1972"),
+    $scarface = new Movie(
+        "Scarface",
+        [
+            "Action",
+            "Crime",
+        ],
+        "1983")
 ]
 
 ?>
