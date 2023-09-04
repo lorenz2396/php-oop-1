@@ -17,7 +17,7 @@ class Movie
 
     public function printMovie()
     {
-        $genreString = implode(", ", $this->genre);
+        $genreString = implode(" - ", $this->genre);
         return "{$this->title} - {$genreString} - {$this->year}";
     }
 }

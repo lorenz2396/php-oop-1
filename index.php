@@ -1,6 +1,6 @@
 <?php
 
-require_once __DIR__ - "./Classes/movie.php";
+require_once __DIR__  . "/Classes/movie.php";
 
 $movies = [
     $godfather = new Movie(
@@ -18,7 +18,7 @@ $movies = [
         "1983")
 ]
 
-?>
+?> 
 
 <!DOCTYPE html>
 <html lang="en">
